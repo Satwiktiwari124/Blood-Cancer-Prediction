@@ -1,0 +1,205 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#b4123a">
+  <title>UnitedCare â€” Blood Cancer Prediction &amp; Doctor Recommendation</title>
+  <meta name="description" content="AI based blood cancer risk prediction from symptoms, specialist recommendation and online appointment booking.">
+  <link rel="icon" href="icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="home">
+  <div id="site-nav"></div>
+
+  <main>
+    <section class="hero py-5">
+      <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="hero-badge mb-3"><i class="bi bi-cpu" aria-hidden="true"></i> Machine Learning powered screening</span>
+            <h1 class="display-4 mb-3">Catch blood cancer risk <span class="text-primary-hc">early</span>, reach the right specialist faster.</h1>
+            <p class="lead text-muted-hc mb-4">Describe your symptoms and basic medical details. Our ensemble of Naive Bayes, Logistic Regression and Random Forest models estimates your risk as Low, Medium or High â€” then connects you with a Hematologist, Oncologist or Physician.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="predict.htm" class="btn btn-primary btn-lg px-4">Check my risk <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a>
+              <a href="doctors.htm" class="btn btn-outline-primary btn-lg px-4">Find a specialist</a>
+            </div>
+            <div class="d-flex flex-wrap gap-4 mt-4 small text-muted-hc fw-semibold">
+              <span><i class="bi bi-shield-check text-primary-hc me-1" aria-hidden="true"></i>Secure records</span>
+              <span><i class="bi bi-lightning-charge text-primary-hc me-1" aria-hidden="true"></i>Results in seconds</span>
+              <span><i class="bi bi-calendar-check text-primary-hc me-1" aria-hidden="true"></i>Online booking</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <img src="images/hero.png" alt="Microscopic view of red and white blood cells" class="hero-img">
+              <div class="floating-card d-none d-md-block" style="left:-24px; bottom:28px;">
+                <div class="small text-muted-hc fw-semibold">Prediction result</div>
+                <div class="d-flex align-items-center gap-2 mt-1">
+                  <span class="risk-low"><span class="risk-pill small">Low Risk</span></span>
+                  <span class="fw-bold">12% probability</span>
+                </div>
+              </div>
+              <div class="floating-card d-none d-md-block" style="right:-16px; top:28px;">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="avatar" style="width:40px;height:40px;background:#b4123a">AV</span>
+                  <div>
+                    <div class="fw-bold small">Dr. Ananya Verma</div>
+                    <div class="small text-muted-hc">Hematologist Â· Recommended</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stat-band py-5" aria-label="Project highlights">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-md-3"><div class="stat-value">3</div><div class="small opacity-75">ML models in ensemble</div></div>
+          <div class="col-6 col-md-3"><div class="stat-value">12+</div><div class="small opacity-75">Symptoms analysed</div></div>
+          <div class="col-6 col-md-3"><div class="stat-value">3</div><div class="small opacity-75">Risk categories</div></div>
+          <div class="col-6 col-md-3"><div class="stat-value">4</div><div class="small opacity-75">Specialist types</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="about">
+      <div class="container py-lg-4">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5">
+            <div class="section-eyebrow mb-2">Why early detection matters</div>
+            <h2 class="display-6 mb-3">Blood cancer symptoms are easy to brush off.</h2>
+            <p class="text-muted-hc">Blood cancer disrupts how blood cells are produced and function, usually originating in the bone marrow or lymphatic system. Its early signs â€” fever, tiredness, frequent infections, weight loss â€” overlap with everyday illnesses, so many patients delay seeing a doctor until the disease has progressed.</p>
+            <p class="text-muted-hc mb-0">Diagnosis through lab tests and specialist visits takes time and is harder to access in rural and underserved areas. UnitedCare offers a quick first opinion and a clear next step.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="card-hc card-hover p-4 h-100">
+                  <div class="icon-tile mb-3"><i class="bi bi-droplet" aria-hidden="true"></i></div>
+                  <h3 class="h5">Leukemia</h3>
+                  <p class="small text-muted-hc mb-0">Affects the blood and bone marrow, causing abnormal white blood cell production.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card-hc card-hover p-4 h-100">
+                  <div class="icon-tile mb-3"><i class="bi bi-diagram-3" aria-hidden="true"></i></div>
+                  <h3 class="h5">Lymphoma</h3>
+                  <p class="small text-muted-hc mb-0">Affects the lymphatic system, often presenting as swollen lymph nodes.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card-hc card-hover p-4 h-100">
+                  <div class="icon-tile mb-3"><i class="bi bi-hexagon" aria-hidden="true"></i></div>
+                  <h3 class="h5">Myeloma</h3>
+                  <p class="small text-muted-hc mb-0">Affects plasma cells in the bone marrow, frequently causing bone pain.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-hc p-4 mt-3">
+              <h3 class="h6 fw-bold mb-3">Common warning signs</h3>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill bg-primary-soft text-primary-hc fw-semibold px-3 py-2">Persistent fever</span>
+                <span class="badge rounded-pill bg-primary-soft text-primary-hc fw-semibold px-3 py-2">Chronic fatigue</span>
+                <span class="badge rounded-pill bg-primary-soft text-primary-hc fw-semibold px-3 py-2">Frequent infections</span>
+                <span class="badge rounded-pill bg-primary-soft text-primary-hc fw-semibold px-3 py-2">Unexplained weight loss</span>
+                <span class="badge rounded-pill bg-primary-soft text-primary-hc fw-semibold px-3 py-2">Bone pain</span>
+                <span class="badge rounded-pill bg-primary-soft text-primary-hc fw-semibold px-3 py-2">Night sweats</span>
+                <span class="badge rounded-pill bg-primary-soft text-primary-hc fw-semibold px-3 py-2">Swollen lymph nodes</span>
+                <span class="badge rounded-pill bg-primary-soft text-primary-hc fw-semibold px-3 py-2">Easy bruising / bleeding</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white border-top border-bottom" id="how-it-works">
+      <div class="container py-lg-4">
+        <div class="text-center mx-auto mb-5" style="max-width: 640px;">
+          <div class="section-eyebrow mb-2">Proposed methodology</div>
+          <h2 class="display-6">How the system works</h2>
+          <p class="text-muted-hc">Seven connected modules take you from sign up to a confirmed consultation.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3"><div class="d-flex gap-3"><span class="step-num">1</span><div><h3 class="h6 fw-bold">Register &amp; login</h3><p class="small text-muted-hc mb-0">Create a secure account with name, age, gender and email.</p></div></div></div>
+          <div class="col-md-6 col-lg-3"><div class="d-flex gap-3"><span class="step-num">2</span><div><h3 class="h6 fw-bold">Submit symptoms</h3><p class="small text-muted-hc mb-0">Select symptoms like fever, fatigue, bone pain or night sweats.</p></div></div></div>
+          <div class="col-md-6 col-lg-3"><div class="d-flex gap-3"><span class="step-num">3</span><div><h3 class="h6 fw-bold">Preprocessing</h3><p class="small text-muted-hc mb-0">Missing values handled, fields encoded, features scaled.</p></div></div></div>
+          <div class="col-md-6 col-lg-3"><div class="d-flex gap-3"><span class="step-num">4</span><div><h3 class="h6 fw-bold">ML prediction</h3><p class="small text-muted-hc mb-0">Naive Bayes, Logistic Regression and Random Forest evaluate risk.</p></div></div></div>
+          <div class="col-md-6 col-lg-3"><div class="d-flex gap-3"><span class="step-num">5</span><div><h3 class="h6 fw-bold">Risk output</h3><p class="small text-muted-hc mb-0">You&apos;re classified as Low, Medium or High risk.</p></div></div></div>
+          <div class="col-md-6 col-lg-3"><div class="d-flex gap-3"><span class="step-num">6</span><div><h3 class="h6 fw-bold">Doctor recommendation</h3><p class="small text-muted-hc mb-0">Matched with a Hematologist, Oncologist, Pathologist or Physician.</p></div></div></div>
+          <div class="col-md-6 col-lg-3"><div class="d-flex gap-3"><span class="step-num">7</span><div><h3 class="h6 fw-bold">Book appointment</h3><p class="small text-muted-hc mb-0">Pick a doctor and reserve a consultation slot online.</p></div></div></div>
+          <div class="col-md-6 col-lg-3"><div class="d-flex gap-3"><span class="step-num"><i class="bi bi-speedometer2" aria-hidden="true"></i></span><div><h3 class="h6 fw-bold">Admin dashboard</h3><p class="small text-muted-hc mb-0">Manage patients, doctors, predictions and appointments.</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="models">
+      <div class="container py-lg-4">
+        <div class="row g-4 align-items-end mb-4">
+          <div class="col-lg-7">
+            <div class="section-eyebrow mb-2">Prediction engine</div>
+            <h2 class="display-6 mb-0">Three models, one confident estimate</h2>
+          </div>
+          <div class="col-lg-5">
+            <p class="text-muted-hc mb-0">Each model scores your symptoms independently. The final risk combines all three for a more robust result.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card-hc card-hover p-4 h-100">
+              <div class="icon-tile mb-3"><i class="bi bi-percent" aria-hidden="true"></i></div>
+              <h3 class="h5">Naive Bayes</h3>
+              <p class="text-muted-hc small">Fast probabilistic classifier that performs well on symptom-based medical datasets.</p>
+              <div class="d-flex justify-content-between small fw-semibold mb-1"><span>Reference accuracy</span><span>86%</span></div>
+              <div class="progress" role="progressbar" aria-label="Naive Bayes accuracy" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:86%"></div></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-hc card-hover p-4 h-100">
+              <div class="icon-tile mb-3"><i class="bi bi-graph-up" aria-hidden="true"></i></div>
+              <h3 class="h5">Logistic Regression</h3>
+              <p class="text-muted-hc small">Estimates the probability of disease presence from weighted symptom features.</p>
+              <div class="d-flex justify-content-between small fw-semibold mb-1"><span>Reference accuracy</span><span>89%</span></div>
+              <div class="progress" role="progressbar" aria-label="Logistic Regression accuracy" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:89%"></div></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-hc card-hover p-4 h-100">
+              <div class="icon-tile mb-3"><i class="bi bi-tree" aria-hidden="true"></i></div>
+              <h3 class="h5">Random Forest</h3>
+              <p class="text-muted-hc small">Ensemble of decision trees â€” the most accurate and robust of the three.</p>
+              <div class="d-flex justify-content-between small fw-semibold mb-1"><span>Reference accuracy</span><span>93%</span></div>
+              <div class="progress" role="progressbar" aria-label="Random Forest accuracy" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:93%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="card-hc p-4 p-lg-5 text-center" style="background: linear-gradient(135deg, #8d0c2c, #101828); border: none;">
+          <h2 class="display-6 text-white mb-3">Notice something unusual? Don&apos;t wait.</h2>
+          <p class="text-white-50 mx-auto mb-4" style="max-width: 560px;">Get a preliminary risk assessment in under two minutes and a recommended specialist to follow up with.</p>
+          <a href="predict.htm" class="btn btn-light btn-lg px-4 fw-bold text-primary-hc">Start free assessment</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
